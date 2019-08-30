@@ -1,8 +1,6 @@
 import React from 'react';
-import {View} from 'react-native';
-
-// import { Container } from './styles';
+import {Text} from 'react-native';
 
 export default function Dashboard() {
-  return <View />;
+  return <Text>Alisson</Text>;
 }
