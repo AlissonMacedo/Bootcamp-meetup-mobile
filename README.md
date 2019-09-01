@@ -7,24 +7,22 @@
 ## 💻  A screen of login end register.
 
  - A simple screen of login;
-
-<p align="center">
-<img src="./demo/demo1.png" alt="demo1" title="demo1">
-</p>
-
  - A screen of register;
 
 <p align="center">
-<img src="./demo/demo2.png" alt="demo1" title="demo1">
+<img src="./demo/demo1.png" alt="demo1" title="demo1">
+<img src="./demo/demo2.png" alt="demo2" title="demo2">
 </p>
-
 
 ## 💻  A deshboard screen, incriptions and profile.
 
 - A dashboard linsting meetups by date;
 
 <p align="center">
-<img src="./demo/demo3.gif" alt="demo1" title="demo1">
+<img src="./demo/demo3.gif" alt="demo3" title="demo3">
+<img src="./demo/demo4.gif" alt="demo4" title="demo4">
+<img src="./demo/demo5.gif" alt="demo5" title="demo5">
+<img src="./demo/demo6.gif" alt="demo6" title="demo6">
 </p>
 
 
@@ -36,13 +34,11 @@ yarn
 ```
  - Run the API local
 ```sh
-json-server server.json -p 3333
+yarn dev / configure api.js - baseURL with your ip (example: 192.168.0.1)
 ```
  - Run the project
 ```sh
-yarn start
+react-native run-ios --simulator="iPhone x" / react-native run-android
 ```
- - The project will run in
-```sh
-http://localhost:3000/
-```
+
+GoodLook.

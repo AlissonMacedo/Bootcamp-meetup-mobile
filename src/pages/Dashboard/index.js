@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Alert } from 'react-native';
-import { format, parseISO, isBefore, subDays, addDays } from 'date-fns';
+import React, {useState, useEffect} from 'react';
+import {Alert} from 'react-native';
+import {format, parseISO, isBefore, subDays, addDays} from 'date-fns';
 import pt from 'date-fns/locale/pt';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import { withNavigationFocus } from 'react-navigation';
+import {withNavigationFocus} from 'react-navigation';
 import PropTypes from 'prop-types';
 
 import api from '~/services/api';
@@ -22,7 +22,7 @@ import {
   Loading,
 } from './styles';
 
-function Dashboard({ isFocused }) {
+function Dashboard({isFocused}) {
   const [date, setDate] = useState(new Date());
   const [page, setPage] = useState(1);
   const [meetups, setMeetups] = useState([]);
@@ -32,7 +32,7 @@ function Dashboard({ isFocused }) {
     async function loadMeetups() {
       try {
         const response = await api.get('meetups', {
-          params: { date },
+          params: {date},
         });
 
         const data = response.data.map(meetup => ({
@@ -49,7 +49,7 @@ function Dashboard({ isFocused }) {
       } catch (error) {
         Alert.alert(
           'Falha na busca',
-          'Houve um erro ao realizar a busca dos meetups'
+          'Houve um erro ao realizar a busca dos meetups',
         );
       }
     }
@@ -67,7 +67,7 @@ function Dashboard({ isFocused }) {
     } catch (err) {
       Alert.alert(
         'Falha ao inscrever-se',
-        'Houve um erro ao inscrever-se no meetup'
+        'Houve um erro ao inscrever-se no meetup',
       );
     }
   }
@@ -86,7 +86,7 @@ function Dashboard({ isFocused }) {
     const nextPage = page + 1;
 
     const response = await api.get('meetups', {
-      params: { date, page: nextPage },
+      params: {date, page: nextPage},
     });
 
     const data = response.data.map(meetup => ({
@@ -126,7 +126,7 @@ function Dashboard({ isFocused }) {
               onEndReachedThreshold={0.2}
               onEndReached={meetups.length >= 10 ? loadMore : null}
               keyExtractor={item => String(item.id)}
-              renderItem={({ item }) => (
+              renderItem={({item}) => (
                 <MeetupCard
                   data={item}
                   textButton="Realizar inscrição"
@@ -148,7 +148,7 @@ Dashboard.propTypes = {
 
 Dashboard.navigationOptions = {
   tabBarLabel: 'Meetups',
-  tabBarIcon: ({ tintColor }) => (
+  tabBarIcon: ({tintColor}) => (
     <Icon name="format-list-bulleted" size={20} color={tintColor} />
   ),
 };
