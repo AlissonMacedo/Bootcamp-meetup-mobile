@@ -1,18 +1,18 @@
-import React, {useMemo} from 'react';
-import {DatePickerAndroid} from 'react-native';
-import {format} from 'date-fns';
+import React, { useMemo } from 'react';
+import { DatePickerAndroid } from 'react-native';
+import { format } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 
-import {Container, DateButton, DateText} from './styles';
+import { Container, DateButton, DateText } from './styles';
 
-export default function DatePicker({date, onChange}) {
+export default function DatePicker({ date, onChange }) {
   const dateFormatted = useMemo(
-    () => format(date, "dd 'de' MMMM", {locale: pt}),
-    [date],
+    () => format(date, "dd 'de' MMMM", { locale: pt }),
+    [date]
   );
 
   async function handleOpenPicker() {
-    const {action, year, month, day} = await DatePickerAndroid.open({
+    const { action, year, month, day } = await DatePickerAndroid.open({
       mode: 'spinner',
       date,
     });

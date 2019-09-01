@@ -1,13 +1,13 @@
-import React, {useRef, useState, useEffect} from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import React, { useRef, useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import Background from '~/components/Background';
 import Header from '~/components/Header';
 
-import {updateProfileRequest} from '~/store/modules/user/actions';
-import {signOut} from '~/store/modules/auth/actions';
+import { updateProfileRequest } from '~/store/modules/user/actions';
+import { signOut } from '~/store/modules/auth/actions';
 
 import {
   Container,
@@ -16,7 +16,6 @@ import {
   Separator,
   SubmitButton,
   LogoutButton,
-  Title,
 } from './styles';
 
 export default function Profile() {
@@ -49,7 +48,7 @@ export default function Profile() {
         oldPassword,
         password,
         confirmPassword,
-      }),
+      })
     );
   }
 
@@ -61,7 +60,6 @@ export default function Profile() {
     <Background>
       <Header />
       <Container>
-        <Title>Atualizar dados</Title>
         <Form>
           <FormInput
             icon="person-outline"
@@ -136,7 +134,7 @@ export default function Profile() {
 
 Profile.navigationOptions = {
   tabBarLabel: 'Meu perfil',
-  tabBarIcon: ({tintColor}) => (
+  tabBarIcon: ({ tintColor }) => (
     <Icon name="person" size={20} color={tintColor} />
   ),
 };
