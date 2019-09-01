@@ -24,7 +24,7 @@
 - A dashboard linsting meetups by date;
 
 <p align="center">
-<img src="./demo/demo2.gif" alt="demo1" title="demo1">
+<img src="./demo/demo3.gif" alt="demo1" title="demo1">
 </p>
 
 
