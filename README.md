@@ -3,8 +3,7 @@
 
 ## 💻  A screen of login end register.
 
- - A simple screen of login;
- - A screen of register;
+ - A simple screen of login and register;
 
 <p align="center">
 <img src="./demo/demo1.png" alt="demo1" title="demo1">
@@ -13,7 +12,9 @@
 
 ## 💻  Dashboard screen, incriptions and profile.
 
-- A dashboard linsting meetups by date;
+- A dashboard linsting meetups by date, It is possible to register for an event.
+- The screen of incriptions list the events you are subscribed to.
+- The profile screen is possible to change your data as name, email and enter a new password.
 
 <p align="center">
 <img src="./demo/demo3.gif" alt="demo3" title="demo3">
