@@ -1,8 +1,5 @@
-<h1 align="center">bootcamp-ReactJS-RocketShoes</h1>
-
- - This app was developed during the course of RocketSeat using react-native.
-
- - This aplication was develop in course of RocketSeat, with the proposal to be delivered as a final challenge.
+<h1 align="center">Bootcamp-Meetup-Mobile</h1>
+- This app was developed during the course of RocketSeat using react-native, with the proposal to be delivered as a final challenge.
 
 ## 💻  A screen of login end register.
 
@@ -14,7 +11,7 @@
 <img src="./demo/demo2.png" alt="demo2" title="demo2">
 </p>
 
-## 💻  A deshboard screen, incriptions and profile.
+## 💻  Dashboard screen, incriptions and profile.
 
 - A dashboard linsting meetups by date;
 
